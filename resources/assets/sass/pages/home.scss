@@ -1,0 +1,46 @@
+.page.home{
+  background-image: url("~/images/bg-pages.jpg");
+  background-position: center;
+  .home-info{
+    margin: 80px 0;
+  }
+  .goal .goal-month{
+      background-color:#00357d;
+      color:#fff;
+      text-align:center;
+  }
+  .sinreg{
+      text-align:center;
+  }
+  .track-map{
+    margin-bottom: 10px;
+    position: relative;
+
+    .btn-period{
+      background-color: $red;
+      border-radius: 100%;
+      border: none;
+      color: #fff;
+      padding: 5px 14px;
+      position: absolute;
+      text-align: center;
+
+      &.period-1{
+        left: 58%;
+        top: 6%;
+      }
+      &.period-2{
+        left: 65%;
+        top: 40%;
+      }
+      &.period-3{
+        left: 50%;
+        top: 80%;
+      }
+      &.period-4{
+        left: 10%;
+        top: 55%;
+      }
+    }
+  }
+}

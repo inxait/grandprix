@@ -1,0 +1,38 @@
+.page.about{
+  background-image: url("~/images/bg-pages-red.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  .program-description{
+    background-color: #FFF;
+    border-bottom: 3px solid #333;
+    color: #666;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .user{
+    background-color: #FFF;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    img{
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page.about{
+    background-position-x: -140px;
+    min-height: 818px;
+    .user{
+      img{
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+header.main-header{
+  background-color: $blue;
+  background-image: url("~/images/bg-header.jpg");
+  background-position-x: center;
+  border-bottom: 4px solid $red;
+  position: relative;
+
+  .avatar, .name, .month-goals {
+    display: inline-block;
+  }
+
+  .avatar{
+    height: 80px;
+    width: 80px;
+  }
+  .month-goals{
+    position: relative;
+    top: 5px;
+    button{
+      color: $red;
+      font-size: 0.8em;
+    }
+  }
+  .points{
+    background-color: #FFF;
+    border-radius: 5px;
+    color: $red;
+    margin: 10px auto;
+    text-align: center;
+    padding: 8px 5px;
+  }
+  .name{
+    color: #fff;
+    font-family: 'FuturaStdHeavy';
+    a{
+      color: #fff;
+      font-family: $font-family-base;
+    }
+  }
+  .logout{
+    display: block;
+    margin: 10px auto;
+    margin-top: 20px;
+    text-align: center;
+
+    a{
+      color: #fff;
+    }
+  }
+
+  .logo-acdelco{
+    display: none;
+  }
+  .logo-grandprix{
+    max-width: 190px;
+    margin: auto;
+    padding: 15px;
+    position: relative;
+    img{
+      margin: auto;
+    }
+  }
+
+  .user{
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header.main-header{
+    .logo-acdelco{
+      display: block;
+      float: right;
+      margin-right: 10px;
+      padding: 30px 10px;
+      position: relative;
+    }
+    .logo-grandprix{
+      margin-left: 10px;
+      img{
+        margin: inherit;
+      }
+    }
+  }
+
+  header.main-header.auth{
+    .logo-acdelco, .logo-grandprix{
+      display: inline-block;
+    }
+    .avatar, .name, .logout, .points{
+      margin-top: 25px;
+      vertical-align: middle;
+    }
+    .avatar{
+      margin-left: 30px;
+    }
+    .points{
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+    .logout{
+      display: inline-block;
+      margin: inherit;
+      margin-left: 25px;
+      margin-top: 25px;
+    }
+    .user{
+      display: inline-block;
+    }
+  }
+}

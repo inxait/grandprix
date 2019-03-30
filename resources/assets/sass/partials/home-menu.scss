@@ -1,0 +1,18 @@
+.nav-home{
+  margin: 10px auto;
+  margin-top: 50px;
+  max-width: 480px;
+  text-align: center;
+  width: 100%;
+  li{
+    background-color: $red;
+    border-radius: 5px;
+    margin: 0 10px;
+    a{
+      color: #fff;
+      &:hover, &:focus{
+        background-color: #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.page.dealer{
+  .list-users h2{
+    text-transform:uppercase;
+  }
+
+  .points-user{
+    .panel-stats{
+      .panel-heading{
+        background-color: $blue;
+        text-align: center;
+        color:#fff;
+        text-transform:uppercase;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "common/variables";
+@import "common/mixins";
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~bootstrap-datepicker/dist/css/bootstrap-datepicker.css";
+@import "~multiselect/css/multi-select.css";
+@import "~humane-js/themes/flatty";
+
+@import "layouts/globals";
+
+@import "partials/header";
+@import "partials/footer";
+@import "partials/admin-menu";
+@import "partials/home-menu";
+
+@import "pages/auth";
+@import "pages/account-activation";
+@import "pages/home";
+@import "pages/about";
+@import "pages/how-it-works";
+@import "pages/trivia";
+@import "pages/rewards";
+@import "pages/news";
+@import "pages/profile";
+@import "pages/study-material";
+@import "pages/dealer";
+
+@import "pages/admin/dashboard";
+@import "pages/admin/create-trivia";

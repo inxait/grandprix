@@ -1,0 +1,92 @@
+.page.trivia{
+  .trivia-button{
+    margin: 20px auto;
+    margin-top: 40px;
+    max-width: 480px;
+    button{
+      background-color: $blue;
+      border-color: $blue;
+      padding: 15px 10px;
+      text-transform: uppercase;
+    }
+  }
+  .trivia-description{
+    a{
+      color: $blue;
+      text-decoration: underline;
+    }
+  }
+  .trivia-game{
+    .question{
+      margin: 30px auto;
+    }
+    .timer{
+      margin-bottom: 10px;
+      .seconds-left{
+        color: $red;
+        font-size: 1.5em;
+      }
+    }
+  }
+  .trivia-main{
+    margin-top: 60px;
+  }
+  .reward-condition,
+  .reward-description{
+    text-align: center;
+  }
+  .reward-description{
+    background-color: rgba(255,255,255,.6);
+    font-size: 1.1em;
+    margin: 10px auto;
+    max-width: 480px;
+    padding: 5px;
+    span.big{
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+  .reward-image{
+    img{
+      margin: auto;
+    }
+  }
+}
+
+.page.trivia-unavailable{
+  background-image: url("~/images/bg-no-trivia-small.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  .no-trivia-message{
+    color: #333;
+    font-size: 1.2em;
+    margin: auto;
+    margin-top: 30%;
+    max-width: 450px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page.trivia{
+    background-image: url("~/images/bg-trivia.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page.trivia, .page.trivia-unavailable{
+    min-height: 818px;
+  }
+  .page.trivia-unavailable{
+    background-image: url("~/images/bg-no-trivia.jpg");
+  }
+  .page.trivia{
+    .trivia-button{
+      margin: inherit;
+      margin-top: 30px;
+    }
+  }
+}

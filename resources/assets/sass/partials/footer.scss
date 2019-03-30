@@ -1,0 +1,43 @@
+footer.main-footer{
+  background-color: #000;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+  a.terms{
+    color: #fff;
+  }
+  .socials{
+    display: block;
+    a{
+      text-decoration: none;
+    }
+    p,.icon{
+      display: inline-block;
+    }
+    .icon{
+      height: 38px;
+      margin: 0 10px;
+      position: relative;
+      top: 16px;
+      width: 38px;
+    }
+    .icon.facebook{
+      background-image: url("~/images/facebook.png");
+    }
+    .icon.twitter{
+      background-image: url("~/images/twitter.png");
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer.main-footer{
+    .socials{
+      position: absolute;
+      right: 3%;
+      top: 0;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+//bootstrap vars reference: node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+
+//colors
+$blue: #0A599F;
+$blue-medium: #0a599f;
+$red: #c11f38;
+$gray: #4D4D4D;
+$brand-primary:         $red !default; // #337ab7
+$body-bg:               #fff !default;
+$text-color:            #294165 !default;  //** Global text color on `<body>`.
+
+//fonts
+$font-family-base: 'FuturaStdMedium', sans-serif;
+$font-size-base: 20px !default;
+
+$input-border-focus:    darken($gray, 10%) !default;
+
+$border-radius-base:        0px !default;
+
+//responsive
+//$screen-sm: 1200px !default;
+$nav-pills-active-link-hover-bg:      $blue !default;

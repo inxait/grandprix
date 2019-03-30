@@ -1,0 +1,68 @@
+.page.how-it-works{
+  background-image: url("~/images/bg-pages.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  .how-item{
+    background-color: #FFF;
+    border: 2px solid $blue;
+    border-radius: 6px;
+    display: block;
+    margin: auto;
+    margin: 25px 10px;
+    min-width: 250px;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    .description{
+      padding: 10px;
+      .action{
+        font-size: 1em;
+        margin-top: 5px;
+      }
+      .conditions{
+        color: #666;
+        font-size: 0.9em;
+        margin-top: 20px;
+      }
+      .icon{
+        background-image: url("~/images/ic-how.png");
+        background-repeat: no-repeat;
+        display: block;
+        margin: auto;
+        height: 100px;
+        width: 100px;
+        &.accomplish{
+          background-position-x: -200px;
+        }
+        &.overaccomplish{
+          background-position-x: -300px;
+        }
+        &.trivia{
+          background-position-x: -100px;
+        }
+      }
+      .name{
+        font-size: 1.5em;
+        margin-top: 20px;
+      }
+    }
+
+    .title{
+      background-color: $red;
+      color: #fff;
+      padding: 20px 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page.how-it-works{
+    min-height: 818px;
+    .how-item{
+      display: inline-block;
+      max-width: 260px;
+      min-height: 460px;
+    }
+  }
+}

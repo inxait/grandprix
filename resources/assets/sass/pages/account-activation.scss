@@ -1,0 +1,111 @@
+.page.account-activation{
+  background-image: url("~/images/bg-bleachers.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  .btn-next{
+    background-color: #FFF;
+    color: $red;
+    font-family: 'FuturaStdHeavy', sans-serif;
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding: 10px 30px;
+    &:after{
+      content: url('~/images/auth-deco-red.png');
+      height: 30px;
+      left: 5%;
+      position: relative;
+      top: 6px;
+      width: 45px;
+    }
+  }
+
+  .select-item{
+     display: inline-block;
+     margin: 10px 1px;
+
+     input[type="radio"] {
+      display:none;
+    }
+
+    input[type="radio"] + label span{
+      cursor: pointer;
+      display: block;
+      padding: 5px;
+      width: 96px;
+    }
+
+    input[type="radio"]:checked + label span{
+      border: 1px solid $red;
+    }
+  }
+
+  .name-info{
+    border: 1px solid $blue-medium;
+    max-width: 360px;
+    margin: 10px auto;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    text-align: center;
+    .user-name{
+      background-color: #FFF;
+      font-family: 'FuturaStdLight', sans-serif;
+      padding: 10px;
+    }
+    .info{
+      background-color: $blue-medium;
+      color: #fff;
+      font-family: 'FuturaStdHeavy', sans-serif;
+      font-size: 1.1em;
+      padding: 10px;
+    }
+  }
+  .step1-instructions, .step2-instructions{
+    background-color: #FFF;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .welcome{
+    margin-top: 10px;
+    min-height: 160px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page.account-activation{
+    background-position-x: -650px;
+    .name-info{
+      margin-left: 120px;
+    }
+    .step1-instructions, .step2-instructions{
+      max-width: 514px;
+      position: absolute;
+      right: 2%;
+      top: 6%;
+    }
+    .step2-instructions{
+      top: 30%;
+    }
+    .welcome{
+      margin-left: 90px;
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .page.account-activation{
+    background-position-x: center;
+    .name-info{
+      margin: 10px auto;
+      margin-bottom: 70px;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .page.account-activation{
+    .step1-instructions, .step2-instructions{
+      right: 4%;
+    }
+  }
+}

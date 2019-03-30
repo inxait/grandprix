@@ -1,0 +1,51 @@
+.page.rewards{
+  .big-prize-image{
+    background-image: url("~/images/bg-big-prize.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+    font-family: 'FuturaStdHeavy';
+    font-size: 1.1em;
+    min-height: 220px;
+    margin-top: 10px;
+    padding: 20px 130px;
+    padding-top: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    span.big{
+      display: block;
+      font-size: 1.3em;
+    }
+  }
+  .panel-default{
+    .panel-body{
+      max-height: 700px;
+      overflow-y: scroll;
+      text-align: center;
+    }
+  }
+  .prize-txt{
+    display: block;
+    margin: auto;
+    max-width: 450px;
+    text-align: center;
+  }
+
+  .legal-info{
+    font-size:70%;
+    font-weight:bold;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page.rewards{
+    background-image: url("~/images/bg-rewards.jpg");
+    background-position-x: -440px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .page.rewards{
+    background-position-x: center;
+  }
+}

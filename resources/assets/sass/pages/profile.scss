@@ -1,0 +1,77 @@
+.page.profile{
+  background-image: url("~/images/bg-bleachers.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 170px;
+
+  .profile-content{
+    margin-top: 70px;
+  }
+  .nav-tabs{
+    border-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+    li{
+      border: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 1%;
+      width: 46%;
+      a{
+        background-color: $red;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+      }
+      &.active{
+        a{
+          background-color: $blue;
+        }
+      }
+      &:hover, &:focus{
+        a{
+          background-color: #000;
+        }
+      }
+    }
+  }
+  .tab-content{
+    background-color: #FFF;
+    .alert{
+      border: 2px solid $blue;
+      border-radius: 6px;
+      color: $blue;
+      font-size: 0.9em;
+      margin: 10px 0;
+
+      .name, .reward{
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    #timeline-settlement{
+      .alert{
+        min-height: 85px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page.profile{
+    background-position-x: -610px;
+    background-position-y: center;
+    min-height: 818px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .page.profile{
+    background-position-x: -325px;
+    .profile-content{
+      margin-top: 80px;
+    }
+  }
+}

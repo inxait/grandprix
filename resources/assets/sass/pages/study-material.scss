@@ -1,0 +1,59 @@
+.page.study-material{
+  .material-content{
+    margin-top: 40px;
+    a{
+      text-decoration: none;
+    }
+  }
+  .material-item{
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 300px;
+    vertical-align: top;
+    .image{
+      height: 38px;
+      overflow: hidden;
+      padding:3px;
+    }
+    .title{
+      color: #fff;
+      height: 80px;
+      text-align: center;
+      padding: 15px 10px;
+      word-wrap: break-word;
+    }
+    .type, .title{
+      background-color: #fff;
+      padding: 5px;
+    }
+    &.odd{
+      border: 2px solid $blue;
+      .title{
+        background-color: $blue;
+        word-wrap: break-word;
+      }
+    }
+    &.even{
+      border: 2px solid $red;
+      .title{
+        background-color: $red;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page.study-material{
+    background-image: url("~/images/bg-pages.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page.study-material{
+    min-height: 818px;
+  }
+}
